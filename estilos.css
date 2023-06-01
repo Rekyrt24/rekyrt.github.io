@@ -2,9 +2,10 @@
 
 body{
   background-color: rgb(114, 100, 127);
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     font-family: 'Work Sans', sans-serif;
     font-size: 25px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   }
   
   .bord {
@@ -16,7 +17,7 @@ body{
   }
 
   .imagem-redonda {
-    border-radius: 40%;
+    border-radius: 100%;
   }
   .class3{
 	background-color: rgb(114, 100, 127);
@@ -74,4 +75,38 @@ padding: 20px;
 .img2{
   width: 85px;
 height: 85px;
+border-radius: 50%;
+}
+@-webkit-keyframes spinning {
+  0% {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+  }
+  50% {
+    transform: rotate(325deg);
+    -webkit-transform: rotate(325deg);
+  }
+  100% {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+  }
+}
+
+@-webkit-keyframes translating {
+  0% {
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+  }
+  50% {
+    transform: translateX(50%);
+    -webkit-transform: translateX(50%);
+  }
+  100% {
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+  }
+}
+
+div{
+  -webkit-animation: translating 8s infinite;
 }
